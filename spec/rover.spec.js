@@ -27,7 +27,7 @@ describe("Rover class", function() {
   it("response returned by receiveMessage includes two results if two commands are sent in the message",function(){
     const messageName = "Test Message";
     const commands = [
-      new Command('MODE_CHANGE','LOW_POWER'),
+      new Command('MODE_CHANGE', 'LOW_POWER'),
       new Command('MOVE',50)
     ];
     const message = new Message(messageName, commands);
